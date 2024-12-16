@@ -1,0 +1,88 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "sha256:4e42fb3c9d90ed7895bc04a9d96fe3102a65b521f485cc5a4f3dd818afef9cef",
+      "digest": "sha256:4e42fb3c9d90ed7895bc04a9d96fe3102a65b521f485cc5a4f3dd818afef9cef",
+      "tags": [
+        "3.8"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 973,
+          "digest": "sha256:4e42fb3c9d90ed7895bc04a9d96fe3102a65b521f485cc5a4f3dd818afef9cef"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 515584,
+            "digest": "sha256:9bdd8bfa184d4044d98811c6fd8c9ac172262729550bc0d9f4edd3e4ac0d9fab"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "arm64",
+        "created": "2022-06-15T21:45:58.061806578Z",
+        "history": [
+          {
+            "created": "2022-06-15T21:45:58.061806578Z",
+            "created_by": "ARG ARCH",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-06-15T21:45:58.061806578Z",
+            "created_by": "ADD bin/pause-linux-arm64 /pause # buildkit",
+            "comment": "buildkit.dockerfile.v0"
+          },
+          {
+            "created": "2022-06-15T21:45:58.061806578Z",
+            "created_by": "USER 65535:65535",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          },
+          {
+            "created": "2022-06-15T21:45:58.061806578Z",
+            "created_by": "ENTRYPOINT [\"/pause\"]",
+            "comment": "buildkit.dockerfile.v0",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:9bdd8bfa184d4044d98811c6fd8c9ac172262729550bc0d9f4edd3e4ac0d9fab"
+          ]
+        },
+        "config": {
+          "Entrypoint": [
+            "/pause"
+          ],
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          ],
+          "User": "65535:65535",
+          "WorkingDir": "/"
+        }
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo5NzMsImRpZ2VzdCI6InNoYTI1Njo0ZTQyZmIzYzlkOTBlZDc4OTViYzA0YTlkOTZmZTMxMDJhNjViNTIxZjQ4NWNjNWE0ZjNkZDgxOGFmZWY5Y2VmIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjUxNTU4NCwiZGlnZXN0Ijoic2hhMjU2OjliZGQ4YmZhMTg0ZDQwNDRkOTg4MTFjNmZkOGM5YWMxNzIyNjI3Mjk1NTBiYzBkOWY0ZWRkM2U0YWMwZDlmYWIifV19",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhcm02NCIsImNvbmZpZyI6eyJVc2VyIjoiNjU1MzU6NjU1MzUiLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiRW50cnlwb2ludCI6WyIvcGF1c2UiXSwiV29ya2luZ0RpciI6Ii8iLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjItMDYtMTVUMjE6NDU6NTguMDYxODA2NTc4WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA2LTE1VDIxOjQ1OjU4LjA2MTgwNjU3OFoiLCJjcmVhdGVkX2J5IjoiQVJHIEFSQ0giLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA2LTE1VDIxOjQ1OjU4LjA2MTgwNjU3OFoiLCJjcmVhdGVkX2J5IjoiQUREIGJpbi9wYXVzZS1saW51eC1hcm02NCAvcGF1c2UgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMi0wNi0xNVQyMTo0NTo1OC4wNjE4MDY1NzhaIiwiY3JlYXRlZF9ieSI6IlVTRVIgNjU1MzU6NjU1MzUiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTA2LTE1VDIxOjQ1OjU4LjA2MTgwNjU3OFoiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvcGF1c2VcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm1vYnkuYnVpbGRraXQuYnVpbGRpbmZvLnYxIjoiZXlKbWNtOXVkR1Z1WkNJNkltUnZZMnRsY21acGJHVXVkakFpZlE9PSIsIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo5YmRkOGJmYTE4NGQ0MDQ0ZDk4ODExYzZmZDhjOWFjMTcyMjYyNzI5NTUwYmMwZDlmNGVkZDNlNGFjMGQ5ZmFiIl19fQ==",
+      "distro": {},
+      "platform": {
+        "os": "linux",
+        "architecture": "arm64"
+      },
+      "size": 514000
+    }
+  },
+  "artifacts": [],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "v0.10.0",
+    "sbom_version": "7"
+  }
+}
